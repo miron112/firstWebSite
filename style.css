@@ -1,0 +1,516 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.small-img1{
+  margin-bottom: 5px; /* Отступ между маленькими изображениями */
+  width: 95px;
+  height: 95px;
+  margin-left: 5px;
+  margin-right: 10px;
+  min-height: 90px;
+  min-width: 90px;
+  }
+  
+  .large-img1{
+    max-width: 100%; /* Будем адаптивными */
+    height: auto; /* Сохранение пропорций */
+    
+  }
+
+.large-img{
+  margin: 2vw, 2vw, 2vw, 1vw ;
+  height: 300px;
+  width: 300px;
+}
+
+.small-img{
+  display: flex;
+  flex-direction: column; /* Изображения будут располагаться в колонку */
+  height: 300px;
+  width: 140px;
+}
+
+.topnav {
+  background-color: #ffffff;
+  display: flex; /* Используем Flexbox */
+  justify-content: space-between; /* Разделяем кнопки равномерно */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  /*padding: 0 20px;  Добавляем отступы по бокам от края */
+  overflow: hidden;
+}
+
+.topnavSecond{
+  background-color: #8C8C8C;
+  display: flex; /* Используем Flexbox */
+  justify-content: space-between; /* Разделяем кнопки равномерно */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.topnavSecond1{
+  background-color: #8C8C8C;
+  display: flex; /* Используем Flexbox */
+  justify-content: space-between; /* Разделяем кнопки равномерно */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  height: 3vw;
+  margin-top: 4wv;
+}
+
+.topnav a {
+  display: block; /* Меняем на block */
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #999595;
+}
+
+.active {
+  background-color: #ffffff;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.h4{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1,5pc;
+  line-height: 160%;
+  text-align: center;
+  color: #6A7181;
+  width: 30vw;
+  margin-top: 0px;
+  margin-bottom: 2vw;
+  }
+
+  .photo{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between; /* Распределяет блоки по горизонтали */
+    align-items: center; /* Выравнивает блоки по вертикали */
+    padding: 20px; /* Отступы внутри контейнера */
+    background-color: #FFFFFF;
+    margin-top: 11%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 20px;
+  }
+
+  .container1{
+    display: flex;
+    justify-content: space-between; /* Распределяет блоки по горизонтали */
+    align-items: center; /* Выравнивает блоки по вертикали */
+    margin-top: 3vw;
+  }
+
+  .photo1{
+    width: 20vw; /* Ширина фото */
+    height: 20vw; /* Высота фото */
+    margin-right: 5vw;
+  }
+
+.pogreb{
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 980px) {
+  .topnav a:not(:first-child) {
+      display: none;
+  }
+  .pogreb{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+  .small-img1{
+    display: none;
+    }
+    
+    .large-img1{
+      max-width: 100%; /* Будем адаптивными */
+      height: auto; /* Сохранение пропорций */
+      
+    }
+}
+
+@media screen and (max-width: 980px) {
+  .topnav.responsive {
+      position: relative;
+  }
+  .photo1{
+    width: 40vw;
+    height: 40vw;
+
+}
+
+  .photo{
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .large-img{
+    height: 300px;
+    width: 300px;
+    margin-top: 2vw;
+    order: 2;
+  }
+  
+  .small-img{
+    display: none;
+  }
+
+  .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .topnav.responsive {
+      flex-direction: column; /* Сменяем направление на вертикальное */
+      align-items: flex-start; /* Выравниваем по левому краю */ 
+  }
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+}
+
+.popogreb{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 3vw;
+}
+
+@media screen and (max-width: 981px) {
+  .h4{
+    width: 80vw;
+    margin-top: 2vw;
+  }
+  .popogreb{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 1vw;
+  }
+
+  .container {
+    flex-direction: column; /* Меняет направление на вертикальное */
+    align-items: center; 
+    margin-top: 30%;
+    margin-bottom: 15%;
+  }
+  .container1{
+    flex-direction: column; /* Меняет направление на вертикальное */
+    align-items: center;
+    margin-top: 5%;
+  }
+  .reclama{
+    display: none;
+  }
+  .text-section {
+      margin-right: 0; /* Убираем отступ справа на мобильных устройствах */
+      margin-bottom: 20px; /* Добавляем отступ снизу для текстового блока */
+  }
+ 
+  .topnavSecond1 {
+    display: none; /* Скрыть контейнер при ширине меньше 980px */
+}
+  .button {
+      margin-top: 20px; /* Добавляем отступ сверху для кнопки */
+  }
+}
+.reclama{
+  /* Натяжные потолки любых видов и сложности. Поможем с выбором идеального варианта! Качественные материалы. Опытные мастера! */
+font-family: 'Rubik';
+width: 25vw;
+margin-bottom: 3vw;
+margin-left: 1vw;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #6A7181;
+}
+.firstContainer{
+    width: 95vw;
+    height: auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: #ffffff;
+}
+
+.clider{
+  padding-right: 10%;
+}
+
+.call{
+  background-color: #E13454;
+  color: white;
+}
+.photo2{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 70px;
+}
+
+.text-section {
+  flex: 1; /* Позволяет текстовому блоку занимать доступное пространство */
+  margin-right: 20px; /* Отступ справа для текстового блока */
+}
+
+.image-section {
+  flex: 1; /* Позволяет блоку изображения занимать доступное пространство */
+}
+
+.image-section img {
+  max-width: 100%; /* Убедитесь, что изображение адаптивно */
+  height: auto; /* Сохраняет пропорции изображения */
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку */
+  justify-content: center; /* Центрирует фото в контейнере */
+  gap: 60px; /* Отступы между фотографиями */
+}
+
+.photo-container img {
+  width: 350px; /* Ширина фото */
+  height: 200px; /* Высота фото */
+  object-fit: cover; /* Сохранение аспектного соотношения изображения */
+}
+
+.contaner{
+  background-color: #ffffff;
+  margin-top: 5vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: flex;
+  align-items: center; /* Центрируем элементы внутри контейнера */
+  flex-wrap: wrap;
+  flex-direction: column; 
+  padding: 0px;
+  border-radius: 20px;
+}
+
+.contaner-1{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.plus{
+  src: format();
+}
+
+
+.text3{
+/* каталог */
+/*width: 149.58px;
+height: 20px; */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 2pc;
+line-height: 0px;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+.h1{
+  /* Натяжные потолки с установкой за 1 день */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 57px;
+line-height: 5pc;
+display: flex;
+align-items: center;
+margin-left: 0.75vw;
+
+color: #000000;
+}
+.normal{
+/* VERIS-STUDIO */
+font-family: 'Sawarabi Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 2vw;
+line-height: 74px;
+color: #FFFFFF;
+
+
+}
+
+.class1{
+  /* Красивые рекламные обещания не всегда приводят к качественной */
+font-family: 'Manrope';
+margin-left: 5vw;
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+text-transform: uppercase;
+color: #242C3C;
+}
+
+.class2{
+  margin-left: 5vw;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #6A7181;
+}
+
+.rewiew{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #F7F7F9;
+  padding: 1vw;
+  margin-top: 2vw;
+  width: 80%;
+  height: 80%;
+}
+
+.result{
+  /* результат */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 3pc;
+width: auto;
+height: auto;
+margin-top: 2vw;
+margin-bottom: 1vw;
+/* Style */
+color: #242C3C;
+}
+
+.ter1{
+  background-color: #CF0953;
+  padding-left: 10px;
+  width: auto;
+}
+
+.ter2{
+  background-color: #242C3C;
+  padding-left: 10px;
+}
+
+.rewiew-butten{
+  display: grid; /* Устанавливаем режим grid */
+  grid-template-columns: repeat(2, auto); /* 2 колонки */
+  column-gap: 20px; /* Расстояние между колонками */
+  margin-top: 40px;
+  width: auto;
+}
+
+.rew5{
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+color: #FFFFFF;
+}
+
+.rew{
+  /* Оценка заказчика */
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 18px;
+/* identical to box height */
+/* #6A7181 */
+color: #6A7181;
+}
+
+.rew1{
+/* PC/H3 */
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 160%;
+/* or 45px */
+text-transform: uppercase;
+/* Style */
+color: #242C3C;
+}
+
+.rew{
+  /* Что мы сделали: */
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+text-transform: uppercase;
+
+color: #6A7181;
+}
+
+.rew7{
+  /* Поддробнее */
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+color: #242C3C;
+}
+
+.fim1{
+  border: 1px;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.fim2{
+  border: 1px;
+  border-radius: 20px;
+  background-color: #D993DB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

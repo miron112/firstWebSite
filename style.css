@@ -15,6 +15,15 @@
   min-width: 90px;
   }
   
+  .rewiew{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    background-color: #F7F7F9;
+    padding: 1vw;
+    margin-top: 2vw;
+  }
+
   .large-img1{
     max-width: 100%; /* Будем адаптивными */
     height: auto; /* Сохранение пропорций */
@@ -135,7 +144,18 @@
   justify-content: space-around;
   align-items: flex-start;
 }
+@media screen and (max-width: 1271px) {
 
+  .rewiew{
+    display: flex;
+    justify-content: center;
+    background-color: #F7F7F9;
+    padding: 1vw;
+    margin-top: 2vw;
+  }
+
+  
+}
 @media screen and (max-width: 980px) {
   .topnav a:not(:first-child) {
       display: none;
@@ -396,17 +416,6 @@ font-weight: 400;
 font-size: 16px;
 line-height: 160%;
 color: #6A7181;
-}
-
-.rewiew{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #F7F7F9;
-  padding: 1vw;
-  margin-top: 2vw;
-  width: 80%;
-  height: 80%;
 }
 
 .result{

@@ -405,6 +405,15 @@ margin-right: 0px;
   /* Отступы между фотографиями */
 }
 
+.photo-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  /* Позволяет элементам переноситься на следующую строку */
+  justify-content: center;
+  /* Центрирует фото в контейнере */
+  /* Отступы между фотографиями */
+}
+
 .photo-container img {
   width: 350px;
   /* Ширина фото */
@@ -530,8 +539,6 @@ height: 20px; */
   /* Устанавливаем режим grid */
   grid-template-columns: repeat(2, auto);
   /* 2 колонки */
-  column-gap: 20px;
-  /* Расстояние между колонками */
   margin-top: 40px;
   width: auto;
 }

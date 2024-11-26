@@ -5,6 +5,17 @@
   width: 100%;
 }
 
+.stranno{
+  /* Что мы сделали: */
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+line-height: 27px;
+color: #6A7181;
+}
+
 .small-img1 {
   margin-bottom: 5px;
   /* Отступ между маленькими изображениями */
@@ -614,4 +625,15 @@ height: 20px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.rew3{
+  /* Полотно коллекции "EcoLine" М 303 Профиль 53 м.п. Крепление под люстру - 3 шт. Выкройка углов - 8 шт. */
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #6A7181;
+margin: 0px;
 }
